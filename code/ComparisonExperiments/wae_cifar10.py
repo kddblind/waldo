@@ -24,7 +24,7 @@ import resplot
 # In[2]:
 
 
-DEVICE = th.device("cuda:1" if th.cuda.is_available() else "cpu")
+DEVICE = th.device("cuda:0" if th.cuda.is_available() else "cpu")
 
 #USEFUL FUNCTIONS
 

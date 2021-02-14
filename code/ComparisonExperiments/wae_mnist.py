@@ -24,7 +24,7 @@ import resplot
 # In[2]:
 
 
-DEVICE = th.device("cuda:1" if th.cuda.is_available() else "cpu")
+DEVICE = th.device("cuda:0" if th.cuda.is_available() else "cpu")
 
 #USEFUL FUNCTIONS
 
@@ -149,8 +149,8 @@ def run(args):
     np.random.seed(seed)
     th.manual_seed(seed)
 
-    zero = th.tensor([0], dtype=th.float).cuda().to(DEVICE)
-    one = th.tensor([1], dtype=th.float).cuda().to(DEVICE)
+    zero = th.tensor(0, dtype=th.float).cuda().to(DEVICE)
+    one = th.tensor(1, dtype=th.float).cuda().to(DEVICE)
 
     # ## Prepare dataset
 

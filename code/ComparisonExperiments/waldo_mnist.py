@@ -149,8 +149,8 @@ def run(args):
     np.random.seed(seed)
     th.manual_seed(seed)
 
-    zero = th.tensor([0], dtype=th.float).cuda().to(DEVICE)
-    one = th.tensor([1], dtype=th.float).cuda().to(DEVICE)
+    zero = th.tensor(0, dtype=th.float).cuda().to(DEVICE)
+    one = th.tensor(1, dtype=th.float).cuda().to(DEVICE)
 
     # ## Prepare dataset
 
